@@ -1,0 +1,12 @@
+{
+	"parameters": {
+		"fs.module" : "fs"
+	},
+	
+	"services": [
+		{
+			"id": "fs.service",
+			"constructor": "%fs.module%"
+		}
+	]
+}

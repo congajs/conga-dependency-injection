@@ -1,0 +1,22 @@
+{
+	"parameters": {
+		"setter.service.constructor" : "setter-service"
+	},
+	
+	"services": [
+		{
+			"id": "setter.service",
+			"constructor": "%setter.service.constructor%",
+			"calls": [
+				{
+					"method": "setFoo",
+					"arguments": ["bar"]
+				},
+				{
+					"method": "setSomething",
+					"arguments": ["else"]
+				}
+			]
+		}
+	]
+}

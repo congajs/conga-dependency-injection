@@ -1,0 +1,24 @@
+{
+	"parameters": {
+		"initialization.service.constructor": "initialization-service"
+	},
+	
+	"services": [
+		{
+			"id": "initialization.service.one",
+			"constructor": "%initialization.service.constructor%",
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		},
+		{
+			"id": "initialization.service.two",
+			"constructor": "%initialization.service.constructor%",
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		}
+	]
+}

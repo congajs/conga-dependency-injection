@@ -1,0 +1,18 @@
+{
+	"parameters": {
+		"simple.arguments.service.constructor" : "simple-argument-service"
+	},
+	
+	"services": [
+
+		{
+			"id": "simple.arguments.service",
+			"constructor": "%simple.arguments.service.constructor%",
+			"arguments": [
+				"one",
+				2,
+				true
+			]
+		}
+	]
+}

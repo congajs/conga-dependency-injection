@@ -1,0 +1,66 @@
+{
+	"parameters": {
+		"service.a.constructor": "initialization-service",
+		"service.b.constructor": "initialization-service",
+		"service.c.constructor": "initialization-with-arguments-service",
+		"service.d.constructor": "initialization-with-arguments-service",
+		"service.e.constructor": "initialization-service"
+	},
+	
+	"services": [
+
+		{
+			"id": "service.e",
+			"constructor": "%service.e.constructor%",
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		},
+
+		{
+			"id": "service.d",
+			"constructor": "%service.c.constructor%",
+			"arguments": [
+				"@service.c",
+				"@service.e"
+			],
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		},
+
+		{
+			"id": "service.c",
+			"constructor": "%service.c.constructor%",
+			"arguments": [
+				"@service.a",
+				"@service.b"
+			],
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		},
+
+		{
+			"id": "service.b",
+			"constructor": "%service.b.constructor%",
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		},
+		
+		{
+			"id": "service.a",
+			"constructor": "%service.a.constructor%",
+			"initialization": {
+				"method": "init",
+				"hasCallback": true
+			}
+		}
+
+	]
+}

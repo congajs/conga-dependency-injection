@@ -1,0 +1,27 @@
+{
+	"parameters": {
+		"simple.service.constructor" : "simple-service",
+		"complex.argument.service.constructor" : "complex-argument-service"
+	},
+	
+	"services": [
+		{
+			"id": "simple.service.one",
+			"constructor": "%simple.service.constructor%"
+		},
+
+		{
+			"id": "complex.argument.service",
+			"constructor": "%complex.argument.service.constructor%",
+			"arguments": [
+				"@simple.service.one",
+				"@simple.service.two"
+			]
+		},
+		
+		{
+			"id": "simple.service.two",
+			"constructor": "%simple.service.constructor%"
+		}
+	]
+}

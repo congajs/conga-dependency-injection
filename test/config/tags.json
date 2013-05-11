@@ -1,0 +1,24 @@
+{
+	"parameters": {
+		"simple.argument.service.constructor" : "simple-argument-service"
+	},
+	
+	"services": [
+
+		{
+			"id": "simple.service.one",
+			"constructor": "%simple.argument.service.constructor%",
+			"arguments": [
+				"service #1"
+			],
+			"tags": [
+				{
+					"name": "my.tag",
+					"parameters": {
+						"foo": "bar"
+					}
+				}
+			]
+		}
+	]
+}
