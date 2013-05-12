@@ -45,7 +45,7 @@
     // create a container builder with the loader
     var builder = new di.ContainerBuilder(loader);
     
-    // build the container and retrieve it an a callback
+    // build the container and retrieve it in a callback
     builder.build(config, function(container){
     	var service = container.get('my.service');
     });
