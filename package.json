@@ -1,6 +1,6 @@
 {
   "name": "conga-dependency-injection",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Dependency Injection / Inversion of Control module",
   "directories": {
     "test": "test"
