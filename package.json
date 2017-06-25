@@ -1,6 +1,6 @@
 {
-  "name": "conga-dependency-injection",
-  "version": "0.0.4",
+  "name": "@conga/conga-dependency-injection",
+  "version": "1.0.0",
   "description": "Dependency Injection / Inversion of Control module",
   "directories": {
     "test": "test"
@@ -21,11 +21,10 @@
   ],
   "author": "Marc Roulias",
   "license": "MIT",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
-     "mocha": "1.9.0",
-     "should": "1.2.2"
+    "mocha": "^3.4.2",
+    "should": "^11.2.1"
   },
   "readmeFilename": "README.md"
 }
