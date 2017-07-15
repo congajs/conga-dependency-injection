@@ -1,13 +1,13 @@
 {
-  "name": "@conga/conga-dependency-injection",
-  "version": "1.0.0",
+  "name": "@conga/dependency-injection",
+  "version": "1.0.1",
   "description": "Dependency Injection / Inversion of Control module",
   "directories": {
     "test": "test"
   },
   "main": "./index.js",
   "scripts": {
-    "test": "mocha test/*.js"
+    "test": "mocha --full-trace test/*.js"
   },
   "repository": {
     "type": "git",

@@ -1,0 +1,12 @@
+{
+	"parameters": {
+		"basic.function.constructor" : "basic-function"
+	},
+
+	"services": [
+		{
+			"id": "basic.function",
+			"function": "%basic.function.constructor%"
+		}
+	]
+}
