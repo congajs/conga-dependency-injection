@@ -1,0 +1,13 @@
+{
+    "parameters": {
+        "simple.service.constructor" : "simple-service"
+    },
+
+    "services": [
+        {
+            "id": "simple.service",
+            "alias": "mySimpleService",
+            "constructor": "%simple.service.constructor%"
+        }
+    ]
+}

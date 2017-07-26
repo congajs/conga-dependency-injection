@@ -182,3 +182,20 @@ describe('ContainerBuilder: Basic function:', function() {
     });
   });
 });
+
+// alias service
+describe('ContainerBuilder: Alias Service:', function() {
+
+  it('returns a valid service using an alias', function(done){
+
+    // configure builder with simple config
+    var builder = new ContainerBuilder(loader);
+    var config = JSON.parse(fs.readFileSync(__dirname + '/config/alias.json', 'utf-8'));
+
+    builder.build(config, function(container){
+      container.has('mySimpleService').should.eql(true);
+      container.get('mySimpleService').should.be.an.instanceOf(SimpleService);
+      done();
+    });
+  });
+});
